@@ -1,0 +1,23 @@
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    text-align:left;
+    margin-right:-4px;
+}
+
+.col-min {
+    min-width:95%;
+    height: 200px
+}
+.button-full-width{
+    display: block;
+    width: 95%;
+    height: 95%;
+    font-size: 400%;
+    font-family: Ubuntu;
+    text-align: center;
+    padding-top: 50px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <title>Mão ETEC</title>
+    <script src="{{url_for('static', filename='bower_components/jquery/dist/jquery.min.js')}}" type="text/javascript"></script>
+    <link href="{{ url_for('static', filename='bower_components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+
+</head>
+<body>
+    <div id="header">
+        <div class="page-header text-center">
+            <h1>Mão robótica ETEC</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-centered">
+            <div class="col-md-4 center-block col-min">
+                <a href="{{ url_for('move_hand', thinger='q') }}" class="btn btn-primary button-full-width" role="button">Dedo 1</a>
+            </div>
+            <div class="col-md-4 center-block col-min">
+                <a href="{{ url_for('move_hand', thinger='w') }}" class="btn btn-primary button-full-width" role="button">Dedo 2</a>
+            </div>
+            <div class="col-md-4 center-block col-min">
+                <a href="{{ url_for('move_hand', thinger='e') }}" class="btn btn-primary button-full-width" role="button">Dedo 3</a>
+            </div>
+            <div class="col-md-4 center-block col-min">
+                <a href="{{ url_for('move_hand', thinger='r') }}" class="btn btn-primary button-full-width" role="button">Dedo 4</a>
+            </div>
+            <div class="col-md-4 center-block col-min">
+                <a href="{{ url_for('move_hand', thinger='t') }}" class="btn btn-primary button-full-width" role="button">Dedo 5</a>
+            </div>
+            <div class="col-md-4 center-block col-min">
+                <a href="{{ url_for('move_hand', thinger='y') }}" class="btn btn-primary button-full-width" role="button">Fecha mão</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
